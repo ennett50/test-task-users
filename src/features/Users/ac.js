@@ -5,8 +5,6 @@ import {
 } from "./constants";
 
 export function createUser(data) {
-    console.log(data);
-
     return (dispatch) => {
         dispatch({
             type: CREATE_USER_START

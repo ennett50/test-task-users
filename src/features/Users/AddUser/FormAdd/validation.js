@@ -30,13 +30,13 @@ function Validation() {
                 case "firstName":
                     if (!value.match(/[a-zA-Zа-яА-ЯёЁ]{3,15}/)) {
                         message =
-                            "Enter a valid password. Min - 3, max - 15 characters";
+                            "Enter a valid firstName. Min - 3, max - 15 characters";
                     }
                     break;
                 case "lastName":
                     if (!value.match(/[a-zA-Zа-яА-ЯёЁ]{3,25}/)) {
                         message =
-                            "Enter a valid password. Min - 3, max - 25 characters";
+                            "Enter a valid lastName. Min - 3, max - 25 characters";
                     }
                     break;
                 case "age":
@@ -44,7 +44,7 @@ function Validation() {
                         !(value.match(/^\d{2}$/) && value >= 18 && value <= 65)
                     ) {
                         message =
-                            "Enter a valid password. Min - 18, max - 65 years";
+                            "Enter a valid age. Min - 18, max - 65 years";
                     }
                     break;
                 case "role":
